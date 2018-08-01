@@ -7,7 +7,7 @@
 'reinit'
 'set display color white'
 'c'
-'open /vol3/nice/output1/pre_amz_neb_regcm_exp1_2001-2005_clim.nc.ctl'
+'sdfopen /home/nice/Documentos/pre_amz_neb_regcm_exp1_2001-2005_clim.nc'
 'set mpdset brmap_hires'
 'set map 15 1 3'
 'set grid off'
@@ -94,6 +94,5 @@
 'q ll2xy 'x15+2.0' 'y15+2.5''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A8''
 
-'printim /vol3/nice/results/regcm4.6.0_exp/areas_amz_neb.jpeg jpeg white'
-
+'printim /home/nice/Documentos/areas_amz_neb.jpeg jpeg white'
 
