@@ -1,7 +1,7 @@
 #__author__      = 'Leidinice Silva'
 #__email__       = 'leidinicesilva@gmail.br'
 #__date__        = '07/04/18'
-#__description__ = 'Plot of variables climatology of the simulation'
+#__description__ = 'Plot maps of mensal precipitation and temperature 2m model'
 
 
 'reinit'

@@ -5,9 +5,7 @@
  
 'reinit'
 
-*'open /vol3/nice/output1/pre_amz_neb_regcm_exp1_2001-2005.nc.ctl'
 'sdfopen /vol3/nice/obs/pre_mon_cmap_observation_2001-2005.nc'
-
 'set display color white'
 'c'
 
