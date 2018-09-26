@@ -9,7 +9,7 @@
 'c'
 'open /vol3/disco1/nice/output1/pre_amz_neb_regcm_exp1_2001-2005.nc.ctl'
 'set mpdset brmap_hires'
-'set map 15 1 3'
+'set map 15 1 6'
 'set grid off'
 'set ylopts 1 6 .1'
 'set gxout contour'
@@ -20,7 +20,7 @@
 'set ylint 3'
 'set grads off'
 'd pr'
-'draw title Areas de Estudo - AMZ_NEB'
+'draw title Dominio e Subdominios da Area de Estudo - AMZ_NEB'
 'draw xlab Longitude'
 
 'set font 1'
@@ -126,4 +126,4 @@
 'q ll2xy 'x23+1.0' 'y23+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A12''
 
-'printim /vol3/disco1/nice/results/regcm4.6.0_exp/areas_amz_neb.png png white'
+'printim /vol3/disco1/nice/results/papers/regcm_exp/season/areas_amz_neb.jpeg jpeg white'

@@ -5,23 +5,24 @@
 
 
 'reinit'
-'sdfopen /vol3/disco1/nice/results/papers/regcm_exp/correl_amz_neb_regcm_exp1_cmap_2005.nc'
+'sdfopen /vol3/disco1/nice/pre_amz_neb_exp2_cmap_obs_2004-2005_bias.nc'
 'set display color white'
 'set gxout shaded'
 'c'
 
-'color -1 1 -kind red->white->royalblue'
+'color -10 10 -kind royalblue->white->red'
 'set cmin 0'
 'set grads off'
 'set xlint 5'
 'set ylint 3'
 'set mpdset brmap_hires'
 'set map 1 1 6'
+'set t 3'
 'd pr'
-*'xcbar -line on -edge triangle'
+'xcbar -line on -edge triangle'
 
-'draw title a) Indice de Correlacao - Reg_EXP1/CMAP - 2005'
+'draw title g) Vies - Reg_EXP2/CMAP - JJA 2005'
 'draw xlab Longitude'
 
-'printim /vol3/disco1/nice/results/papers/regcm_exp/correl_amz_neb_regcm_exp1_cmap_2005.png png white'
+'printim /vol3/disco1/nice/vies_pre_amz_neb_regcm_exp2_cmap_JJA_2005.jpeg jpeg white'
 
