@@ -6,21 +6,25 @@
 
 'reinit'
 'set display color white'
+'set gxout shaded'
 'c'
-'open /vol3/disco1/nice/output1/pre_amz_neb_regcm_exp1_2001-2005.nc.ctl'
+'open /vol3/disco1/nice/input/amz_neb_ICBC.2001010100.nc.ctl'
+
+'color 0 4500 300 -kind white->gray->dimgray'
+*'set clevs 0 400 800 1200 1600 2000 2400 2800 3200 3600 4000' 
+
 'set mpdset brmap_hires'
 'set map 15 1 6'
-'set grid off'
+'set grid on'
 'set ylopts 1 6 .1'
-'set gxout contour'
-'set cmin 10000000000'
 'set xlopts 1 5 .1'
 'set xlint 5'
 'set ylopts 1 5 .1'
 'set ylint 3'
 'set grads off'
-'d pr'
-'draw title Dominio e Subdominios da Area de Estudo - AMZ_NEB'
+'d topo'
+'cbarn'
+'draw title Dominio da Area de Estudo com Topografia (m) - AMZ_NEB'
 'draw xlab Longitude'
 
 'set font 1'
@@ -90,7 +94,7 @@
  x15=-36; x16=-34.5; y15=-10; y16=-5;
 'q ll2xy 'x15' 'y15''; pp1=sublin(result,1); 
 'q ll2xy 'x16' 'y16''; pp2=sublin(result,1); 
-'set line 1'; 'draw rec 'pp1' 'pp2''
+'set line 2'; 'draw rec 'pp1' 'pp2''
 'q ll2xy 'x15' 'y15+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A8''
 
@@ -98,7 +102,7 @@
  x17=-41.3; x18=-36.3; y17=-8; y18=-2.5;
 'q ll2xy 'x17' 'y17''; pp1=sublin(result,1); 
 'q ll2xy 'x18' 'y18''; pp2=sublin(result,1); 
-'set line 1'; 'draw rec 'pp1' 'pp2' '
+'set line 2'; 'draw rec 'pp1' 'pp2' '
 'q ll2xy 'x17+1.0' 'y17+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A9''
 
@@ -106,7 +110,7 @@
  x19=-46.5; x20=-37.5; y19=-12; y20=-8.7;
 'q ll2xy 'x19' 'y19''; pp1=sublin(result,1); 
 'q ll2xy 'x20' 'y20''; pp2=sublin(result,1); 
-'set line 1'; 'draw rec 'pp1' 'pp2''
+'set line 2'; 'draw rec 'pp1' 'pp2''
 'q ll2xy 'x19+1.0' 'y19+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A10''
 
@@ -114,7 +118,7 @@
  x21=-41; x22=-37.8; y21=-18.3; y22=-12.2;
 'q ll2xy 'x21' 'y21''; pp1=sublin(result,1); 
 'q ll2xy 'x22' 'y22''; pp2=sublin(result,1); 
-'set line 1'; 'draw rec 'pp1' 'pp2''
+'set line 2'; 'draw rec 'pp1' 'pp2''
 'q ll2xy 'x21+1.0' 'y21+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A11''
 
@@ -122,8 +126,8 @@
  x23=-46.5; x24=-42.5; y23=-8; y24=-2;
 'q ll2xy 'x23' 'y23''; pp1=sublin(result,1); 
 'q ll2xy 'x24' 'y24''; pp2=sublin(result,1); 
-'set line 1'; 'draw rec 'pp1' 'pp2''
+'set line 2'; 'draw rec 'pp1' 'pp2''
 'q ll2xy 'x23+1.0' 'y23+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A12''
 
-'printim /vol3/disco1/nice/results/papers/regcm_exp/season/areas_amz_neb.jpeg jpeg white'
+'printim /vol3/disco1/nice/results/PhD_project/regcm/area_topo_amz_neb.jpeg jpeg white'
