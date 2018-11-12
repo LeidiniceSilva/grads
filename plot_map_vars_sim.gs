@@ -7,8 +7,9 @@
 'reinit'
 *********************************************
 TRIM = "DJF"
+
 *********************************************
-'sdfopen /vol3/disco1/nice/PNT_2018/output_exp6/CLM4.5/pre_amz_neb_regcm_clm_exp6_2011-2012_yseasmean.nc'
+'sdfopen /vol3/disco1/nice/PNT_2018/output_exp6/CLM4.5/pre_amz_neb_regcm_clm4.5_exp6_201112_201211_yseasmean.nc'
 'set display color white'
 'set gxout shaded'
 'c'
@@ -36,7 +37,7 @@ TRIM = "DJF"
 *********************************************
 TRIM = "MAM"
 *********************************************
-'sdfopen /vol3/disco1/nice/PNT_2018/output_exp6/CLM4.5/pre_amz_neb_regcm_clm_exp6_2011-2012_yseasmean.nc'
+'sdfopen /vol3/disco1/nice/PNT_2018/output_exp6/CLM4.5/pre_amz_neb_regcm_clm4.5_exp6_201112_201211_yseasmean.nc'
 'set display color white'
 'set gxout shaded'
 'c'
@@ -64,7 +65,7 @@ TRIM = "MAM"
 *********************************************
 TRIM = "JJA"
 *********************************************
-'sdfopen /vol3/disco1/nice/PNT_2018/output_exp6/CLM4.5/pre_amz_neb_regcm_clm_exp6_2011-2012_yseasmean.nc'
+'sdfopen /vol3/disco1/nice/PNT_2018/output_exp6/CLM4.5/pre_amz_neb_regcm_clm4.5_exp6_201112_201211_yseasmean.nc'
 'set display color white'
 'set gxout shaded'
 'c'
@@ -92,13 +93,14 @@ TRIM = "JJA"
 *********************************************
 TRIM = "SON"
 *********************************************
-'sdfopen /vol3/disco1/nice/PNT_2018/output_exp6/CLM4.5/pre_amz_neb_regcm_clm_exp6_2011-2012_yseasmean.nc'
+'sdfopen /vol3/disco1/nice/PNT_2018/output_exp6/CLM4.5/pre_amz_neb_regcm_clm4.5_exp6_201112_201211_yseasmean.nc'
 'set display color white'
 'set gxout shaded'
 'c'
 
 'color.gs -gxout shaded -kind white->green->blue->yellow->gold->red 0 100'
-'set clevs 1 2 4 6 10 15 20 30 40 50 60 70 80' 
+*'set clevs 1 2 4 6 10 15 20 30 40 50 60 70 80' 
+'set clevs 1 2 3 4 5 6 8 10 12 15 20 30' 
 'set ccols 16 9 14 4 11 5 13 3 10 7 12 8 2 6'
 'set cmin 0'
 'set grads off'
