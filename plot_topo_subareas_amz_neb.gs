@@ -8,13 +8,13 @@
 'set display color white'
 'set gxout shaded'
 'c'
-'open /vol3/disco1/nice/input/amz_neb_ICBC.2001010100.nc.ctl'
+'open /vol3/disco1/nice/input/amz_neb_DOMAIN000.nc.ctl'
 
-'color 0 4500 300 -kind white->gray->dimgray'
+'color 0 2000 200 -kind white->gray->dimgray'
 *'set clevs 0 400 800 1200 1600 2000 2400 2800 3200 3600 4000' 
 
 'set mpdset brmap_hires'
-'set map 15 1 6'
+'set map 1 1 1'
 'set grid on'
 'set ylopts 1 6 .1'
 'set xlopts 1 5 .1'
@@ -111,7 +111,7 @@
 'q ll2xy 'x19' 'y19''; pp1=sublin(result,1); 
 'q ll2xy 'x20' 'y20''; pp2=sublin(result,1); 
 'set line 2'; 'draw rec 'pp1' 'pp2''
-'q ll2xy 'x19+1.0' 'y19+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
+'q ll2xy 'x19+2.0' 'y19+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A10''
 
 # area Sul da bahia
@@ -119,7 +119,7 @@
 'q ll2xy 'x21' 'y21''; pp1=sublin(result,1); 
 'q ll2xy 'x22' 'y22''; pp2=sublin(result,1); 
 'set line 2'; 'draw rec 'pp1' 'pp2''
-'q ll2xy 'x21+1.0' 'y21+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
+'q ll2xy 'x21+2.0' 'y21+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A11''
 
 # area Nordeste
@@ -127,7 +127,7 @@
 'q ll2xy 'x23' 'y23''; pp1=sublin(result,1); 
 'q ll2xy 'x24' 'y24''; pp2=sublin(result,1); 
 'set line 2'; 'draw rec 'pp1' 'pp2''
-'q ll2xy 'x23+1.0' 'y23+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
+'q ll2xy 'x23+2.0' 'y23+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A12''
 
 'printim /vol3/disco1/nice/results/PhD_project/regcm/area_topo_amz_neb.jpeg jpeg white'
