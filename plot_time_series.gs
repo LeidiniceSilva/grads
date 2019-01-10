@@ -11,7 +11,6 @@
 
 'set x 50'
 'set y 50'
-
 'set t 1 last'
 
 lon1 = -55
@@ -19,17 +18,11 @@ lon2 = -54
 lat1 = -11
 lat2 = -8
 
-*'define a1 = aave(pr,lon='lon1',lon='lon2',lat='lat1',lat='lat2')'
-'define a2 = aave(precip,lon='lon1',lon='lon2',lat='lat1',lat='lat2')'
+'define a1 = aave(pr,lon='lon1',lon='lon2',lat='lat1',lat='lat2')'
 
-*'set parea 1 10 5 8'
-*'set cmark 0'
-*'set vrange 0 80'
-*'d a1'
-
-
-'set ccolor 2'
+'set parea 1 10 5 8'
 'set cmark 0'
+'set ccolor 2'
 'set vrange 0 80'
-'d a2'
+'d a1'
 

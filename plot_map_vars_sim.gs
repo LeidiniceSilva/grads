@@ -118,10 +118,6 @@ TRIM = "SON"
 'printim /vol3/disco1/nice/PNT_2018/results/pre_amz_neb_regcm_clm_exp6_'TRIM'_2012.jpeg jpeg white'
 
 
-
-
-
-
 'reinit'
 *********************************************
 TRIM = "DJF"
