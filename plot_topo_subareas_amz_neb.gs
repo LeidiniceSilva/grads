@@ -8,9 +8,10 @@
 'set display color white'
 'set gxout shaded'
 'c'
-'open /vol3/disco1/nice/data_file/regcm_data/exp_pbl/input_exp/amz_neb_DOMAIN000.nc.ctl'
+'open /vol3/disco1/nice/data_file/regcm_data/exp_est2/bats/input/neb_DOMAIN000.nc.ctl'
 
-'color 0 3000 200 -kind white->green->gray'
+'color 0 2000 200 -kind white->green->gray'
+*'color.gs -gxout shaded -kind white->springgreen->lime->seagreen->darkgreen 0 3000 200'
 
 'set mpdset brmap_hires'
 'set map 1 1 6'
@@ -23,11 +24,15 @@
 'set grads off'
 'd topo'
 'cbarn'
-'draw title Study area domain - AMZ_NEB'
-'draw xlab Topography (m)'
-
-'set font 1'
+'draw title Study area domain - NEB'
+'draw xlab Longitude'
+'draw ylab Latitude'
+'draw string 9.4 7.4 Topo (m)'
+'set font 5'
 'set ccolor 2'
+
+'printim /vol3/disco1/nice/data_file/regcm_data/exp_est2/bats/input/topo_neb.png png white'
+break
 
 ******** Plot box  AMAZONIA **********
 
