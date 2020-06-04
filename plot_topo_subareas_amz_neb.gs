@@ -8,58 +8,53 @@
 'set display color white'
 'set gxout shaded'
 'c'
-'open /vol3/disco1/nice/data_file/regcm_data/exp_est2/bats/input/neb_DOMAIN000.nc.ctl'
+'open /home/nice/reg_hist_DOMAIN000.nc.ctl'
 
 'color 0 2000 200 -kind white->green->gray'
 *'color.gs -gxout shaded -kind white->springgreen->lime->seagreen->darkgreen 0 3000 200'
 
-'set mpdset brmap_hires'
+'set mpdset mresbr'
 'set map 1 1 6'
 'set grid on'
-'set ylopts 1 6 .1'
-'set xlopts 1 5 .1'
-'set xlint 5'
-'set ylopts 1 5 .1'
-'set ylint 3'
+'set xlopts 1 5 .15'
+'set xlint 6'
+'set ylopts 1 5 .15'
+'set ylint 4'
 'set grads off'
 'd topo'
-'cbarn'
-'draw title Study area domain - NEB'
-'draw xlab Longitude'
-'draw ylab Latitude'
-'draw string 9.4 7.4 Topo (m)'
-'set font 5'
-'set ccolor 2'
 
-'printim /vol3/disco1/nice/data_file/regcm_data/exp_est2/bats/input/topo_neb.png png white'
-break
+'cbarm'
+'set font 5'
+'set ccolor 1'
 
 ******** Plot box  AMAZONIA **********
 
 # area amz
- x1=-72; x2=-49; y1=-8; y2=6;
+ x1=-68; x2=-52; y1=-15; y2=-5;
 'q ll2xy 'x1' 'y1''; pp1=sublin(result,1); 
 'q ll2xy 'x2' 'y2''; pp2=sublin(result,1); 
 'set line 1'; 'draw rec 'pp1' 'pp2''
-'q ll2xy 'x1+20.0' 'y1+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
-'draw string 'd1' 'd2' 'AMZ'' 
-
-# area sam
- x3=-72; x4=-49; y3=-18; y4=-8;
-'q ll2xy 'x3' 'y3''; pp1=sublin(result,1); 
-'q ll2xy 'x4' 'y4''; pp2=sublin(result,1); 
-'set line 1'; 'draw rec 'pp1' 'pp2' '
-'q ll2xy 'x3+20.0' 'y3+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
-'draw string 'd1' 'd2' 'SAM''
+'q ll2xy 'x1+1.5' 'y1+8.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
+'draw string 'd1' 'd2' 'A1'' 
 
 ************ Plot box NORTHEAST ************
 
 # area neb
- x5=-49; x6=-35; y5=-18; y6=-2;
+ x3=-46; x4=-35; y3=-15; y4=-3;
+'q ll2xy 'x3' 'y3''; pp1=sublin(result,1); 
+'q ll2xy 'x4' 'y4''; pp2=sublin(result,1); 
+'set line 1'; 'draw rec 'pp1' 'pp2''
+'q ll2xy 'x3+9.0' 'y3+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
+'draw string 'd1' 'd2' 'A2''
+
+************ Plot box MATOPIBA ************
+
+# area matopiba
+ x5=-51; x6=-42; y5=-15; y6=-5;
 'q ll2xy 'x5' 'y5''; pp1=sublin(result,1); 
 'q ll2xy 'x6' 'y6''; pp2=sublin(result,1); 
 'set line 1'; 'draw rec 'pp1' 'pp2''
-'q ll2xy 'x5+10.5' 'y5+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
-'draw string 'd1' 'd2' 'NEB''
+'q ll2xy 'x5+3.0' 'y5+4.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
+'draw string 'd1' 'd2' 'A3''
 
-'printim /vol3/disco1/nice/results/papers/exp_pbl/topo_amz_neb.png png white'
+'printim /home/nice/topo_amz_neb.png png white'
