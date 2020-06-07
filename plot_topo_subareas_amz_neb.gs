@@ -40,21 +40,21 @@
 ************ Plot box NORTHEAST ************
 
 # area neb
- x3=-46; x4=-35; y3=-15; y4=-3;
+ x3=-40; x4=-35; y3=-13; y4=-3;
 'q ll2xy 'x3' 'y3''; pp1=sublin(result,1); 
 'q ll2xy 'x4' 'y4''; pp2=sublin(result,1); 
 'set line 1'; 'draw rec 'pp1' 'pp2''
-'q ll2xy 'x3+9.0' 'y3+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
+'q ll2xy 'x3+4.0' 'y3+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A2''
 
 ************ Plot box MATOPIBA ************
 
 # area matopiba
- x5=-51; x6=-42; y5=-15; y6=-5;
+ x5=-50.5; x6=-42.5; y5=-15; y6=-2.5;
 'q ll2xy 'x5' 'y5''; pp1=sublin(result,1); 
 'q ll2xy 'x6' 'y6''; pp2=sublin(result,1); 
 'set line 1'; 'draw rec 'pp1' 'pp2''
-'q ll2xy 'x5+3.0' 'y5+4.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
+'q ll2xy 'x5+2.0' 'y5+12.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A3''
 
 'printim /home/nice/topo_amz_neb.png png white'
