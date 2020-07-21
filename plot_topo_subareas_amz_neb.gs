@@ -30,7 +30,7 @@
 ******** Plot box  AMAZONIA **********
 
 # area amz
- x1=-68; x2=-52; y1=-15; y2=-5;
+ x1=-68; x2=-52; y1=-12; y2=-3;
 'q ll2xy 'x1' 'y1''; pp1=sublin(result,1); 
 'q ll2xy 'x2' 'y2''; pp2=sublin(result,1); 
 'set line 1'; 'draw rec 'pp1' 'pp2''
@@ -40,7 +40,7 @@
 ************ Plot box NORTHEAST ************
 
 # area neb
- x3=-40; x4=-35; y3=-13; y4=-3;
+ x3=-40; x4=-35; y3=-16; y4=-3;
 'q ll2xy 'x3' 'y3''; pp1=sublin(result,1); 
 'q ll2xy 'x4' 'y4''; pp2=sublin(result,1); 
 'set line 1'; 'draw rec 'pp1' 'pp2''
