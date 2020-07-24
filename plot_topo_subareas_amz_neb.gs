@@ -40,11 +40,11 @@
 ************ Plot box NORTHEAST ************
 
 # area neb
- x3=-40; x4=-35; y3=-16; y4=-3;
+ x3=-39.5; x4=-35; y3=-14; y4=-3;
 'q ll2xy 'x3' 'y3''; pp1=sublin(result,1); 
 'q ll2xy 'x4' 'y4''; pp2=sublin(result,1); 
 'set line 1'; 'draw rec 'pp1' 'pp2''
-'q ll2xy 'x3+4.0' 'y3+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
+'q ll2xy 'x3+3.0' 'y3+1.0''; d1 = subwrd(result,1); d2 = subwrd(result,2)
 'draw string 'd1' 'd2' 'A2''
 
 ************ Plot box MATOPIBA ************
