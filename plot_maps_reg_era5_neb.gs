@@ -112,7 +112,7 @@ break
 
 'sdfopen /home/nice/Downloads/pr_daysum_201705.nc'
 
-'set t 27'
+'set t 23'
 'set lat -20.2 4.44'
 'set lon -49.54 -20.5'
 'set mpdset mresbr'
@@ -139,7 +139,7 @@ break
 'draw title A) 26/05/2017'
 ********
 
-'set t 28'
+'set t 24'
 'set lat -20.2 4.44'
 'set lon -49.54 -20.5'
 'set vpage 0 11 0 8.5'
@@ -163,7 +163,7 @@ break
 'draw title B) 27/05/2017'
 **************
 
-'set t 29'
+'set t 26'
 'set lat -20.2 4.44'
 'set lon -49.54 -20.5'
 'set vpage 0 11 0 8.5'
@@ -187,7 +187,7 @@ break
 'draw title C) 29/05/2017'
 **************
 
-'set t 30'
+'set t 26'
 'set lat -20.2 4.44'
 'set lon -49.54 -20.5'
 'set vpage 0 11 0 8.5'
