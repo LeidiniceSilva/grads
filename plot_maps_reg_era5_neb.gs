@@ -10,7 +10,7 @@
 
 'open /home/nice/Downloads/neb_STS.2017050100.nc.ctl'
 
-'set t 26'
+'set t 23'
 'set mpdset mresbr'
 'set mproj scaled'
 'set map 1 1 8'
@@ -32,10 +32,10 @@
 'set cmin 2'
 
 'd pr*46800'
-'draw title A) 26/05/2017'
+'draw title A) 22/05/2017'
 ********
 
-'set t 27'
+'set t 24'
 'set vpage 0 11 0 8.5'
 'set parea 6 10.95 5 8'
 'set strsiz 0.20'
@@ -54,10 +54,10 @@
 'set cmin 2'
 
 'd pr*46800'
-'draw title B) 27/05/2017'
+'draw title B) 23/05/2017'
 **************
 
-'set t 28'
+'set t 25'
 'set vpage 0 11 0 8.5'
 'set parea 1 5.95 1 4'
 'set strsiz 0.20'
@@ -76,10 +76,10 @@
 'set cmin 2'
 
 'd pr*46800'
-'draw title C) 29/05/2017'
+'draw title C) 24/05/2017'
 **************
 
-'set t 29'
+'set t 26'
 'set vpage 0 11 0 8.5'
 'set parea 6 10.95 1 4'
 'set strsiz 0.20'
@@ -98,7 +98,7 @@
 'set cmin 2'
 
 'd pr*46800'
-'draw title D) 30/05/2017'
+'draw title D) 25/05/2017'
 'draw string 0.20 0.40 RCM'
 'draw string 10 0.40 (mm)'
 'cbarn'
