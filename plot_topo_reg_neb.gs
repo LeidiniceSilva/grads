@@ -27,4 +27,4 @@
 'cbarm'
 'set font 5'
 'set ccolor 1'
-'printim /home/nice/topo_amz_neb.png png white'
+'printim /home/nice/topo_neb.png png white'
