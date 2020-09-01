@@ -6,6 +6,61 @@
 
 'reinit'
 'set display color white'
+'set gxout shaded'
+'c'
+'open /home/nice/Documents/daniele/neb_DOMAIN000.nc.ctl'
+
+'set vpage 2 9 0 8.5'
+'set mpdset mresbr'
+'set lon -48 -34'
+'set lat -18 0'
+'set map 1 1 8'
+'set grid on'
+'set xlopts 1 5 .2'
+'set xlint 3'
+'set ylopts 1 5 .2'
+'set ylint 3'
+'set grads off'
+
+'colormap -map ncl_topo -levels 0 1500 100'
+'d topo'
+
+'draw string 3.8 6 CE'
+'drawbox -41.5 -37.5 -7.5 -2.8'
+'cbarm'
+'set font 5'
+'set ccolor 1'
+
+'printim /home/nice/Documents/daniele/topo_neb.png png white'
+break
+
+'reinit'
+'set display color white'
+'set gxout shaded'
+'c'
+'sdfopen /home/nice/Documents/daniele/cru_ts4.04_clim_1981-2010.nc'
+
+'set mpdset hires'
+'set lat -90 90'
+'set lon -180 180'
+'set mproj robinson'
+'set grads off'
+'set grid on'
+'set xlopts 1 5 .2'
+'set xlint 3'
+'set ylopts 1 5 .2'
+'set ylint 3'
+
+'color 0 7000 500 -kind white->darkblue->gray'
+'d pre'
+'cbarm'
+
+'printim /home/nice/Documents/daniele/clim_globo.png png white'
+break
+
+
+'reinit'
+'set display color white'
 'c'
 
 'sdfopen /home/nice/Documents/daniele/pre_cru_ts4.04_neb_anom_2012-2016.nc'
@@ -265,8 +320,8 @@ break
 
 'draw string 3.8 6 CE'
 'drawbox -41.5 -37.5 -7.5 -2.8'
-
-'/home/nice/Documents/github_projects/grads/cbarm'
+'cbarm'
 'set font 5'
 'set ccolor 1'
+
 'printim /home/nice/Documents/daniele/topo_neb.png png white'
