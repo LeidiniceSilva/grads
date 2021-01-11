@@ -8,9 +8,9 @@
 'set display color white'
 'set gxout shaded'
 'c'
-'sdfopen /home/nice/Downloads/anom_month02.nc'
+'sdfopen /home/nice/Documents/jessica/era5/anom_month12.nc'
 
-'set t 36'
+'set t 37'
 'set mpdset mresbr'
 'set grads off'
 'set grid on'
@@ -19,9 +19,9 @@
 'set ylint 10'
 'set xlint 10'
 
-'colormap -l -300 300 100 -map brn2grn'
+'colormap -l -100 100 20 -map brn2grn'
 'd mtpr'
 'cbar'
-'draw title A) Precipitation Anomaly Dec/2015 (mm/m)'
+'draw title A) Montlhy Precipitation Anomaly Dec/2015 (mm)'
 
-'printim /home/nice/Downloads/map_tp_anom.png png white'
+'printim /home/nice/Documents/jessica/era5/map_tp_anom.png png white'
