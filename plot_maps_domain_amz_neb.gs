@@ -1,6 +1,6 @@
 #__author__      = 'Leidinice Silva'
 #__email__       = 'leidinicesilva@gmail.com'
-#__date__        = '07/04/18'
+#__date__        = '07/04/2018'
 #__description__ = 'Plot area and subarea of study'
 
 

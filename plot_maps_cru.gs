@@ -1,7 +1,7 @@
 #__author__      = 'Leidinice Silva'
 #__email__       = 'leidinicesilva@gmail.com'
 #__date__        = '08/24/2020'
-#__description__ = 'Plot study area (NEB)'
+#__description__ = 'Plot maps of the cru database'
 
 
 'reinit'

@@ -1,5 +1,5 @@
 #__author__      = 'Leidinice Silva'
-#__email__       = 'leidinicesilva@gmail.br'
+#__email__       = 'leidinicesilva@gmail.com'
 #__date__        = '07/04/18'
 #__description__ = 'Extract time series of the area of study'
 

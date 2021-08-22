@@ -1,6 +1,6 @@
 #__author__      = 'Leidinice Silva'
 #__email__       = 'leidinicesilva@gmail.com'
-#__date__        = '11/08/18'
+#__date__        = '11/08/2018'
 #__description__ = 'Plot maps of seasonal precipitation'
 
 
